@@ -1,0 +1,114 @@
+.product-category {
+  opacity: 1;
+  transition: var(--transition-fast);
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+
+  &.active {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .product-item {
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-fast);
+    border: 1px solid var(--light-gray);
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-hover);
+
+      .product-item__image img {
+        transform: scale(1.1);
+      }
+    }
+
+    &__image {
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition-slow);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+      }
+    }
+
+    &__content {
+      padding: 2rem;
+
+      h3 {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      p {
+        color: var(--text-color);
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+      }
+    }
+
+    &__features {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        color: var(--text-color);
+        margin-bottom: 0.75rem;
+        padding-left: 1.75rem;
+        position: relative;
+
+        &::before {
+          content: "✓";
+          color: var(--success-color);
+          position: absolute;
+          left: 0;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

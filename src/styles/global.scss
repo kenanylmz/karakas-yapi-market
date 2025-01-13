@@ -1,0 +1,65 @@
+:root {
+  // Ana renkler - daha canlı
+  --primary-color: #1e3799;
+  --secondary-color: #e84393;
+  --accent-color: #00b894;
+
+  // Yeni vurgu renkleri
+  --success-color: #00b894;
+  --warning-color: #fdcb6e;
+  --info-color: #0984e3;
+
+  // Nötr renkler
+  --background-color: #f6f9fc;
+  --white: #ffffff;
+  --text-color: #2d3436;
+  --light-gray: #dfe6e9;
+
+  // Yeni gradientler
+  --gradient-primary: linear-gradient(135deg, #1e3799 0%, #4a69bd 100%);
+  --gradient-secondary: linear-gradient(135deg, #e84393 0%, #fd79a8 100%);
+  --gradient-accent: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+
+  // Geliştirilmiş gölgeler
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.2);
+
+  // Geçiş efektleri
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  // Border radius
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+}
+
+// Global stil güncellemeleri
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// Yeni kart stilleri
+.card {
+  background: var(--white);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+  }
+}

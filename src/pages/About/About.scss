@@ -1,0 +1,130 @@
+.about-page {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+
+  .about-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+
+    h1 {
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--text-color);
+      opacity: 0.9;
+    }
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    .stat-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--border-radius-lg);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-fast);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .stat-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        color: var(--secondary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-label {
+        color: var(--text-color);
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    .content-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-fast);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+      }
+
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      p {
+        color: var(--text-color);
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      &.contact {
+        .contact-info {
+          .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            .icon {
+              font-size: 1.5rem;
+              margin-right: 1rem;
+              color: var(--secondary-color);
+            }
+
+            .details {
+              h3 {
+                font-size: 1.1rem;
+                color: var(--primary-color);
+                margin-bottom: 0.2rem;
+              }
+
+              p {
+                margin: 0;
+                font-size: 1rem;
+
+                a {
+                  color: var(--text-color);
+                  text-decoration: none;
+                  transition: var(--transition-fast);
+
+                  &:hover {
+                    color: var(--secondary-color);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

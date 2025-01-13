@@ -1,0 +1,48 @@
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 3rem 0 1rem;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__section {
+    h3,
+    h4 {
+      margin-bottom: 1rem;
+      color: var(--secondary-color);
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: var(--white);
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
