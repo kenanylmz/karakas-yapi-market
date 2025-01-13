@@ -4,9 +4,19 @@ import "./Contact.scss";
 const Contact = () => {
   const emailAddress = "yusufkrks97@gmail.com";
   const emailSubject = "Yapı Market Ürün Bilgi Talebi";
-  const emailBody = "Merhaba, ürünleriniz hakkında bilgi almak istiyorum.";
+  const emailBody = `Merhaba,
 
-  const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
+Ürünleriniz hakkında bilgi almak istiyorum.
+
+İletişim bilgilerim:
+Ad Soyad: 
+Telefon: 
+  
+Bilgi almak istediğim ürünler:
+
+Teşekkürler.`;
+
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${encodeURIComponent(
     emailSubject
   )}&body=${encodeURIComponent(emailBody)}`;
 
@@ -27,7 +37,7 @@ const Contact = () => {
       icon: "📧",
       title: "E-posta",
       content: "yusufkrks97@gmail.com",
-      link: mailtoLink,
+      link: gmailLink,
     },
   ];
 
@@ -62,7 +72,12 @@ const Contact = () => {
             Ürünlerimiz, fiyatlarımız ve hizmetlerimiz hakkında detaylı bilgi
             almak için hemen e-posta gönderin.
           </p>
-          <a href={mailtoLink} className="cta-button">
+          <a
+            href={gmailLink}
+            className="cta-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             E-posta Gönder
           </a>
         </div>

@@ -31,9 +31,11 @@ const About = () => {
         <div className="about-header">
           <h1>Hakkımızda</h1>
           <p className="lead">
-            Karakaş Yapı Market olarak, yapı malzemeleri sektöründe kaliteli
-            ürün ve profesyonel hizmet anlayışıyla müşterilerimize en iyi
-            çözümleri sunmaktayız.
+            Karakaş Yapı Market olarak, yapı malzemeleri sektöründe 25 yıllık
+            deneyimimizle hem toptan alım hem de satış hizmeti veriyoruz. Geniş
+            ürün yelpazemiz ve güçlü tedarik zincirimiz ile müşterilerimize en
+            kaliteli ürünleri sunuyor, aynı zamanda büyük miktarlarda alım
+            yaparak tedarikçilerimize güvenilir bir iş ortağı oluyoruz.
           </p>
         </div>
 
@@ -95,6 +97,29 @@ const About = () => {
                     </a>
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-card business-model">
+            <h2>İş Modelimiz</h2>
+            <div className="business-sections">
+              <div className="section">
+                <h3>Satış Hizmetlerimiz</h3>
+                <p>
+                  Geniş ürün yelpazemiz ile müşterilerimize kaliteli yapı
+                  malzemeleri sunuyoruz. Perakende ve toptan satış
+                  seçeneklerimizle her ölçekte projeye uygun çözümler
+                  üretiyoruz.
+                </p>
+              </div>
+              <div className="section">
+                <h3>Alım Hizmetlerimiz</h3>
+                <p>
+                  Güçlü finansal yapımız ve geniş depolama alanlarımız sayesinde
+                  büyük miktarlarda toptan alım yapıyoruz. Üreticiler için
+                  güvenilir ve sürdürülebilir bir iş ortağıyız.
+                </p>
               </div>
             </div>
           </div>
